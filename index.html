@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập bố cục Responsive với DIV và CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung bao ngoài toàn bộ trang web -->
+    <div class="wrapper">
+
+        <!-- 1. Header: Logo & Tiêu đề -->
+        <div class="header">
+            <div class="header-logo">
+                <h1>🎓 CodeGym Portal</h1>
+            </div>
+            <div class="header-banner">
+                <p>Nền tảng học lập trình hiện đại &amp; chuyên nghiệp</p>
+            </div>
+        </div>
+
+        <!-- 2. Navigation Bar: Thanh điều hướng -->
+        <div class="navbar">
+            <a href="#" class="active">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Khóa học</a>
+            <a href="#">Bài viết</a>
+            <a href="#">Hỏi đáp</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- 3. Container chính chứa các cột bố cục -->
+        <div class="container">
+
+            <!-- Cột trái: Sidebar Menu (Danh mục) -->
+            <div class="sidebar-left">
+                <div class="card">
+                    <h3>📚 Danh mục khóa học</h3>
+                    <ul class="menu-list">
+                        <li><a href="#">Lập trình Web Front-end</a></li>
+                        <li><a href="#">HTML5 &amp; CSS3 Nâng cao</a></li>
+                        <li><a href="#">JavaScript &amp; DOM</a></li>
+                        <li><a href="#">Bootstrap &amp; Tailwind CSS</a></li>
+                        <li><a href="#">ReactJS / VueJS</a></li>
+                        <li><a href="#">Back-end với Java Spring</a></li>
+                        <li><a href="#">Cơ sở dữ liệu MySQL</a></li>
+                    </ul>
+                </div>
+
+                <div class="card support-box">
+                    <h3>💬 Hỗ trợ học viên</h3>
+                    <p>Hotline: <strong>1800 6325</strong></p>
+                    <p>Email: <a href="mailto:support@codegym.vn">support@codegym.vn</a></p>
+                    <p>Giờ làm việc: 8:00 - 21:00</p>
+                </div>
+            </div>
+
+            <!-- Cột giữa: Nội dung chính -->
+            <div class="main-content">
+                <div class="featured-post">
+                    <h2>🔥 Chào mừng đến với bài thực hành Bố cục Responsive</h2>
+                    <p class="post-meta">Đăng bởi <strong>Ban Đào Tạo</strong> | Cập nhật: 2026</p>
+                    <p>
+                        Trong bài tập này, chúng ta sử dụng các thẻ khối <code>&lt;div&gt;</code> kết hợp với
+                        các kỹ thuật <strong>Flexbox</strong>, <strong>Box-sizing</strong> và <strong>Media Queries</strong>
+                        để tạo nên một bố cục trang web tự động co giãn, hiển thị hoàn hảo trên máy tính, máy tính bảng và điện thoại di động.
+                    </p>
+                </div>
+
+                <!-- Lưới tin tức / bài viết con -->
+                <div class="article-grid">
+                    <div class="article-card">
+                        <h4>📱 Thiết kế Responsive</h4>
+                        <p>Tìm hiểu cách sử dụng Media Queries để thích ứng giao diện với mọi độ phân giải màn hình.</p>
+                        <a href="#" class="read-more">Xem chi tiết &rarr;</a>
+                    </div>
+                    <div class="article-card">
+                        <h4>⚡ Kỹ thuật Flexbox</h4>
+                        <p>Căn chỉnh các khối DIV linh hoạt theo hàng hoặc cột mà không lo bị tràn hay vỡ bố cục.</p>
+                        <a href="#" class="read-more">Xem chi tiết &rarr;</a>
+                    </div>
+                    <div class="article-card">
+                        <h4>📦 Box Model trong CSS</h4>
+                        <p>Kiểm soát padding, border, margin một cách chính xác tuyệt đối với <code>border-box</code>.</p>
+                        <a href="#" class="read-more">Xem chi tiết &rarr;</a>
+                    </div>
+                    <div class="article-card">
+                        <h4>🎨 Phối màu &amp; Typography</h4>
+                        <p>Tối ưu font chữ, khoảng cách và tỷ lệ tương phản để tạo trải nghiệm đọc tốt nhất.</p>
+                        <a href="#" class="read-more">Xem chi tiết &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột phải: Sidebar Thông tin bổ sung / Sự kiện -->
+            <div class="sidebar-right">
+                <div class="card">
+                    <h3>📅 Sự kiện sắp diễn ra</h3>
+                    <div class="event-item">
+                        <span class="event-date">20/10</span>
+                        <div class="event-info">
+                            <strong>Workshop UI/UX</strong>
+                            <p>Tối ưu hóa trải nghiệm người dùng hiện đại</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-date">25/10</span>
+                        <div class="event-info">
+                            <strong>Tech Talk: AI &amp; Web</strong>
+                            <p>Xu hướng lập trình web kỷ nguyên AI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card notification-box">
+                    <h3>📢 Thông báo</h3>
+                    <p>Khai giảng lớp Front-end chuyên sâu vào ngày 01 tháng tới. Đăng ký ngay để nhận học bổng sớm!</p>
+                </div>
+            </div>
+
+        </div> <!-- Hết .container -->
+
+        <!-- 4. Footer: Chân trang -->
+        <div class="footer">
+            <div class="footer-content">
+                <p>&copy; 2026 CodeGym. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Trợ giúp</a>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Hết .wrapper -->
+
+</body>
+</html>
